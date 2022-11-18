@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    
+    overflow-x: hidden;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    transition: 0.25s;
+}
+
+a:hover{
+    color: #dec129;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container{
+    width: 70%;
+}
+
+
+/* form */
+
+input, textarea{
+    font-size: 22px;
+}
+
+input:focus{
+    outline: none;
+    }
+textarea:focus{
+    outline: none;
+    }
+    
+
+.form-group{
+    display: flex;
+    margin-bottom: 1em;
+}
+.form-input {
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    width: 80%;
+
+}
+
+form textarea{
+    resize: none;
+    height: 100px;
+    border: 0;
+    border-bottom: 1px solid rgb(185, 185, 185);
+
+}
+
+input::placeholder{
+    font-size: 20px;
+    color: #bbb;
+}
+
+textarea::placeholder{
+    font-size: 20px;
+    color: #bbb;
+}
+
+.btn-form{
+    padding: 10px 45px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #f1867e;
+    color: white;
+    font-size: 20px;
+
+}
+.btn-file{
+    display: none;
+}
+
+.btn-form:hover{
+    opacity: 0.8;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.validation-error{
+    color: #f1867e;
+    border-left: 3px solid #f1867e;
+    padding-left: 3px;
+}

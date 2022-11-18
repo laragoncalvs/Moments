@@ -1,0 +1,8 @@
+<div class="moment" *ngIf="moment">
+    <img src="{{BaseApiUrl}}uploads/{{moment.image}}">
+    <h1>
+        {{moment.title}}
+    </h1>
+    <p>{{moment.description}}</p>
+    <p>Publicado em {{moment.created_at}}</p>
+</div>

@@ -1,0 +1,30 @@
+nav{
+    display:flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px ;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+ul{
+    width: 40%;
+    justify-content: space-around;
+    display: flex;
+
+}
+
+h2{
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+a{
+    display: flex;
+    align-items: center;
+}

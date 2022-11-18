@@ -1,0 +1,43 @@
+
+<div class="home-header">
+
+    <h2>Veja o que estão compartilhando!</h2>
+    <form>
+        <div class="input">
+
+            <fa-icon class="icon search" [icon]="faSearch"></fa-icon> <input placeholder="Pesquisar" (input)="search($event)">
+        </div>
+        
+    </form>
+</div>
+
+<div class="cards">
+
+
+    <div *ngFor="let moment of moments">
+        <div class="card-image">
+            <a routerLink="moments/{{moment.id}}">
+
+                <img src="{{baseApiUrl}}uploads/{{moment.image}}">
+                <div class="card-text">
+
+                    <h3>
+                        {{moment.title}}
+                    </h3>
+                    <div class="card-details">
+                        <p>
+                            <fa-icon [icon]="faClock" class="icon"></fa-icon>{{moment.created_at}}
+                        </p>
+
+                        <p>
+                            <fa-icon [icon]="faComment" class="icon"></fa-icon> {{moment.comments!.length}}
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+</div>

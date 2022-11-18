@@ -1,0 +1,33 @@
+.about{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.about h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+
+}
+a{
+    color: white;
+}
+
+img{
+    width: 700px;
+}
+
+.text-about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    margin-top: 15px ;
+}
+
+.btn-form{
+    margin-top: 150px;;
+}
+
+span{
+    color: #dec129;
+}
